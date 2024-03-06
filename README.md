@@ -112,7 +112,6 @@
 
         Habilitar OCR e mesclar todo o texto no campo merged_content
 
-         .
 
         > **Nota** É importante selecionar **Habilitar OCR** para ver todas as opções de campo enriquecido.
 
