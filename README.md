@@ -14,21 +14,9 @@
 
    Você precisará provisionar um recurso **de serviços de IA do Azure** que esteja no mesmo local que seu recurso do Azure AI Search. Sua solução de pesquisa usará esse recurso para enriquecer os dados no armazenamento de dados com insights gerados por IA.
 
-   1. Retorne à página inicial do portal do Azure. Clique no botão 
+   1. Retorne à página inicial do portal do Azure. Clique no botão ＋Criar um recurso e pesquise os serviços de IA do Azure
 
-      ＋Criar um recurso
-
-       e pesquise os 
-
-      serviços de IA do Azure
-
-       . Selecione 
-
-      criar
-
-       um plano 
-
-      de serviços de IA do Azure
+       . Selecione criar um plano de serviços de IA do Azure
 
        . Você será levado a uma página para criar um recurso de serviços de IA do Azure. Configure-o com as seguintes configurações:
 
@@ -47,15 +35,7 @@
 
    1. Retorne à página inicial do portal do Azure e selecione o botão **+ Criar um recurso** .
 
-   2. Procure 
-
-      conta de armazenamento
-
-       e crie um recurso 
-
-      de conta de armazenamento
-
-       com as seguintes configurações:
+   2. Procure conta de armazenamento e crie um recurso de conta de armazenamento com as seguintes configurações:
 
       - **Assinatura** : *sua assinatura do Azure* .
       - **Grupo de recursos** : *O mesmo grupo de recursos que os recursos do Azure AI Search e dos serviços Azure AI* .
@@ -78,11 +58,7 @@
 
    2. Selecione **+ Contêiner** . Um painel do seu lado direito é aberto.
 
-   3. Insira as seguintes configurações e clique em 
-
-      Criar
-
-       :
+   3. Insira as seguintes configurações e clique em Criar:
 
       - **Nome** : Coffee-Reviews
       - **Nível de acesso público** : Container (acesso de leitura anônimo para containers e blobs)
@@ -110,17 +86,7 @@
 
       [![Captura de tela que mostra o assistente de importação de dados.](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/azure-search-wizard-1.png)](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/azure-search-wizard-1.png)
 
-   2. Na página 
-
-      Conectar-se aos seus dados
-
-       , na lista 
-
-      Fonte de Dados
-
-       , selecione 
-
-      Azure Blob Storage
+   2. Na página Conectar-se aos seus dados, na lista Fonte de Dados, selecione Azure Blob Storage
 
        . Preencha os detalhes do armazenamento de dados com os seguintes valores:
 
@@ -138,11 +104,7 @@
 
    4. Na secção **Anexar Serviços Cognitivos** , selecione o seu recurso de serviços Azure AI.
 
-   5. Na seção 
-
-      Adicionar enriquecimentos
-
-       :
+   5. Na seção Adicionar enriquecimentos:
 
       - Altere o **nome da qualificação** para **coffee-skillset** .
 
@@ -170,11 +132,7 @@
         | Gerar tags de imagens    |           | imagemTags        |
         | Gere legendas de imagens |           | legenda da imagem |
 
-   6. Em 
-
-      Salvar enriquecimentos em um armazenamento de conhecimento
-
-       , selecione:
+   6. Em Salvar enriquecimentos em um armazenamento de conhecimento, selecione:
 
       - Projeções de imagem
       - Documentos
@@ -210,11 +168,7 @@
 
    14. Expanda as **opções avançadas** . Certifique-se de que a opção **Base-64 Encode Keys** esteja selecionada, pois as chaves de codificação podem tornar o índice mais eficiente.
 
-   15. Selecione 
-
-       Enviar
-
-        para criar a fonte de dados, o conjunto de habilidades, o índice e o indexador. O indexador é executado automaticamente e executa o pipeline de indexação, que:
+   15. Selecione Enviar para criar a fonte de dados, o conjunto de habilidades, o índice e o indexador. O indexador é executado automaticamente e executa o pipeline de indexação, que:
 
        - Extrai os campos de metadados do documento e o conteúdo da fonte de dados.
        - Executa o conjunto de habilidades cognitivas para gerar campos mais enriquecidos.
@@ -251,11 +205,7 @@
 
    1. Selecione **Pesquisar** . A consulta de pesquisa retorna todos os documentos no índice de pesquisa, incluindo uma contagem de todos os documentos no campo **@odata.count** . O índice de pesquisa deve retornar um documento JSON contendo os resultados da pesquisa.
 
-   2. Agora vamos filtrar por localização. No campo 
-
-      do editor de consultas JSON
-
-       , copie e cole:
+   2. Agora vamos filtrar por localização. No campo do editor de consultas JSON, copie e cole:
 
       Códigocópia de
 
@@ -268,11 +218,7 @@
 
    3. Selecione **Pesquisar** . A consulta pesquisa todos os documentos no índice e filtra revisões com localização em Chicago. Você deveria ver `3`no `@odata.count`campo.
 
-   4. Agora vamos filtrar por sentimento. No campo 
-
-      do editor de consultas JSON
-
-       , copie e cole:
+   4. Agora vamos filtrar por sentimento. No campo do editor de consultas JSON, copie e cole:
 
       Códigocópia de
 
